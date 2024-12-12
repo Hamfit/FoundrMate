@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoundrMate - Co-Founder Matches</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: white;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .search-filter {
+            display: flex;
+            gap: 15px;
+        }
+        .search-input {
+            padding: 10px;
+            border: 1px solid #93c5fd;
+            border-radius: 5px;
+            width: 250px;
+        }
+        .filter-button {
+            background-color: #f0f6ff;
+            color: #2563eb;
+            border: 1px solid #bae6fd;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .matches-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .match-card {
+            background-color: #f0f6ff;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .match-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .compatibility-badge {
+            background-color: #bae6fd;
+            color: #2563eb;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        .skill-tag {
+            background-color: #e6f2ff;
+            color: #2563eb;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+        .match-actions {
+            display: flex;
+            gap: 10px;
+        }
+        .connect-button {
+            flex-grow: 1;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .view-profile-button {
+            flex-grow: 1;
+            background-color: #f0f6ff;
+            color: #2563eb;
+            border: 1px solid #bae6fd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Your Potential Co-Founders</h1>
+            <div class="search-filter">
+                <input type="text" placeholder="Search by name or skill" class="search-input">
+                <button class="filter-button">Filters</button>
+            </div>
+        </div>
+
+        <div class="matches-grid">
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Emma Thompson</h2>
+                        <p>Product Manager & UX Designer</p>
+                    </div>
+                    <span class="compatibility-badge">85%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Product Design</span>
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">Figma</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Michael Chen</h2>
+                        <p>Full-Stack Developer</p>
+                    </div>
+                    <span class="compatibility-badge">92%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">GraphQL</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+            <div class="match-card">
+                <div class="match-header">
+                    <div>
+                        <h2>Sarah Kumar</h2>
+                        <p>Growth Marketing Specialist</p>
+                    </div>
+                    <span class="compatibility-badge">78%</span>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Digital Marketing</span>
+                    <span class="skill-tag">SEO</span>
+                    <span class="skill-tag">Content Strategy</span>
+                </div>
+                <div class="match-actions">
+                    <button class="connect-button">Connect</button>
+                    <button class="view-profile-button">View Profile</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

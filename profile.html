@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FoundrMate - User Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: white;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile-info {
+            display: flex;
+            align-items: center;
+        }
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            background-color: #e6f2ff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .edit-button {
+            background-color: #f0f6ff;
+            color: #2563eb;
+            border: 1px solid #bae6fd;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .profile-card {
+            background-color: #f0f6ff;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+            padding: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2563eb;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #93c5fd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .save-button {
+            width: 100%;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-info">
+                <div class="profile-avatar">👤</div>
+                <div>
+                    <h1>Alex Rodriguez</h1>
+                    <p>Software Engineer & Entrepreneur</p>
+                </div>
+            </div>
+            <a href="#" class="edit-button">Edit Profile</a>
+        </div>
+
+        <div class="profile-card">
+            <form>
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" value="Alex">
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" value="Rodriguez">
+                </div>
+                <div class="form-group">
+                    <label>Professional Headline</label>
+                    <input type="text" value="Software Engineer & Entrepreneur">
+                </div>
+                <div class="form-group">
+                    <label>Skills</label>
+                    <textarea>Full-stack Development, React, Node.js, Product Management</textarea>
+                </div>
+                <div class="form-group">
+                    <label>Startup Interests</label>
+                    <textarea>Looking to build an AI-driven productivity tool. Seeking a co-founder with strong business development skills.</textarea>
+                </div>
+                <button class="save-button">Save Profile</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
